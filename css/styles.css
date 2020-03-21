@@ -5,6 +5,7 @@
 @import "navigation-bar.css";
 @import "friend.css";
 @import "friends.css";
+@import "find.css";
 
 * {
   box-sizing: border-box; /*박스안의 패딩을 추가해도 box size가 바뀌지 않게해줌*/
