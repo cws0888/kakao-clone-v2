@@ -28,6 +28,9 @@
 
 .friend__content .friend__name {
   display: block;
+  /* friends 창의 폰트 굵기 쓸까 말까...
+  font-weight: 600;  
+  */
   margin-bottom: 5px;
 }
 
@@ -45,3 +48,20 @@
 .friend .chat__timestamp {
   font-size: 12px;
 }
+
+.friend .friend__now-listening {
+  border: 1.5px solid #52e084;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.friend__now-listening span {
+  opacity: 0.7;
+}
+
+/* 재생 확인창 아이콘 사이즈 조절
+.friend__now-listening i {
+  font-size: 12px;
+}
+*/
