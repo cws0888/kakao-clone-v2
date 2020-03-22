@@ -1,5 +1,16 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: white;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
 .chats-body {
-  padding: 0;
+  padding: 10px 0px;
+  padding-top: 100px;
 }
 
 .chats-body .header,
@@ -7,9 +18,9 @@
   padding: 0px 20px;
 }
 
-.chat-screen {
+.chats-body {
   background-image: url("../images/chatBg.png");
-  min-height: 100vh; /* chat class에 적용된 div에 viewport(=screen)의 100%의 높이를 줌*/
+  min-height: 1000vh; /* chat class에 적용된 div에 viewport(=screen)의 100%의 높이를 줌*/
 }
 
 .chat__write {
@@ -62,6 +73,7 @@
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 10px;
+  margin-top: 15px;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0 -6px 16px -6px;
@@ -92,7 +104,7 @@
 .message .message__bubble {
   background-color: white;
   display: block; /*메세지 버블 사이에 마진적용이 안되서 추가함*/
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.7),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   padding: 10px 20px;
   border-radius: 20px;
