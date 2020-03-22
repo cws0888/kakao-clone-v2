@@ -35,3 +35,19 @@
   align-items: center;
   border-radius: 50%;
 }
+
+@keyframes showNavigationBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.navigation {
+  /*모든 화면의 네비게이션창이 밑에서 위로 올라오게...*/
+  transform: translateY(80px);
+  animation: showNavigationBar 0.5s ease-out forwards;
+  animation-delay: 0.5s; /*네비창이 올라오는 시간 딜레이*/
+}
