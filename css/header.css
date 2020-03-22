@@ -18,7 +18,7 @@
 
 .header .header__header-column {
   display: flex;
-  align-items: center;
+  align-items: center; /*수직으로 가운데 정렬*/
 }
 
 .header .header__back-btn {
