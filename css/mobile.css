@@ -1,0 +1,26 @@
+.bigScreen {
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fce006;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0px 20px;
+  display: none; /*화면이 작을땐 안보이게*/
+  z-index: 4;
+}
+
+@media screen and (min-width: 550px) {
+  /*가로 픽셀이 550px 이상되면 노란화면 활성됨*/
+  .bigScreen {
+    display: flex;
+  }
+}
