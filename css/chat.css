@@ -91,6 +91,7 @@
 
 .message .message__bubble {
   background-color: white;
+  display: block; /*메세지 버블 사이에 마진적용이 안되서 추가함*/
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   padding: 10px 20px;
@@ -100,7 +101,7 @@
 }
 
 .incoming-message .message__author {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: block;
   font-weight: 600;
