@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px 20px;
   padding-top: 30px;
 }
@@ -71,12 +72,7 @@
 .message {
   display: flex;
   align-items: flex-start;
-  width: 50%;
   margin-bottom: 20px;
-}
-
-.message .message__content {
-  width: 80%;
 }
 
 .incoming-message {
@@ -93,20 +89,18 @@
   margin-right: 15px;
 }
 
-.message .message__content {
-  padding: 1px;
-}
-
 .message .message__bubble {
   background-color: white;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   padding: 10px 20px;
   border-radius: 20px;
+  color: white;
+  font-weight: 600;
 }
 
 .incoming-message .message__author {
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 10px;
   display: block;
   font-weight: 600;
@@ -115,8 +109,18 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px; /*메세지 버블 왼쪽 끝에 꼭다리 생기게*/
+  background-image: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  ); /*uigradients.com 사이트에서 원하는 색 가능, 말풍선 그라디에이션(진행방향 : 왼쪽에서 오른쪽으로) 추가*/
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px; /*메세지 버블 오른쪽 끝에 꼭다리 생기게*/
+  background-image: linear-gradient(
+    to left,
+    #00c6ff,
+    #0072ff
+  ); /*uigradients.com 사이트에서 원하는 색 가능, 말풍선 그라디에이션(진행방향 : 오른쪽에서 왼쪽으로) 추가*/
 }
